@@ -23,6 +23,3 @@ with open('blip_captions.csv', 'w') as w:
         pred = model.generate({"image": image})
         w.write(f"\n{img},{pred[0]}")
         # ['a large fountain spewing water into the air']
-        i += 1
-        if i==5:
-            break
