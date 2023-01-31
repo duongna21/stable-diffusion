@@ -57,7 +57,8 @@ class FolderData(Dataset):
                 ext = Path(caption_file).suffix.lower()
                 if ext in [".csv", ".txt"]:
                     txt = f.read().split("\n")[1:]
-                    captions = {line.split(",")[0]:line.split(",")[1] for line in txt}
+                    captions = {line.split(",")[0]:line.split(",")[1] for line in txt if "," in line}
+                    print(f"Dataset length: {len(captions.keys())}")
                 elif ext == ".json":
                     captions = json.load(f)
                 elif ext == ".jsonl":
