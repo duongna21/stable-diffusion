@@ -181,6 +181,7 @@ class CrossAttention(nn.Module):
         import xformers
         if is_xformers_available():
             out = xformers.ops.memory_efficient_attention(q, k, v, attn_bias=None)
+            print(out.shape)
         else:
             sim = einsum('b i d, b j d -> b i j', q, k) * self.scale
 
