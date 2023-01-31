@@ -177,9 +177,10 @@ class CrossAttention(nn.Module):
 
         q, k, v = map(lambda t: rearrange(t, 'b n (h d) -> (b h) n d', h=h), (q, k, v))
 
-        from diffusers.utils.import_utils import is_xformers_available
+        from diffusers.utils.import_utils import is_xformers_availableformers
         if is_xformers_available():
             out = xformers.ops.memory_efficient_attention(query, key, value, attn_bias=None)
+            print("out.shape: ", out.shape)
         else:
             sim = einsum('b i d, b j d -> b i j', q, k) * self.scale
 
