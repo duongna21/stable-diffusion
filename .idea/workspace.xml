@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12fd67cb-4282-44dd-9666-7da9037196a5" name="Changes" comment="" />
+    <list default="true" id="12fd67cb-4282-44dd-9666-7da9037196a5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ldm/modules/attention.py" beforeDir="false" afterPath="$PROJECT_DIR$/ldm/modules/attention.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675091185357</updated>
       <workItem from="1675091200858" duration="2091000" />
-      <workItem from="1675136020817" duration="3912000" />
+      <workItem from="1675136020817" duration="7518000" />
     </task>
     <servers />
   </component>
